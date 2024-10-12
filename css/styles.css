@@ -23,13 +23,22 @@ body {
     margin-bottom: 0;
  }
 
-img {
-    display: block;
-}
+ .container {
+     width: 1158px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin: 0 auto;
+ }
+
+ .section {
+     padding-top: 120px;
+     padding-bottom: 120px;
+ }
 
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
     display: flex;
@@ -96,13 +105,6 @@ img {
     color: #404bbf;
 }
 
-.container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
 .orderservice {
     background: #2e2f42;
     padding-top: 188px;
@@ -145,11 +147,6 @@ img {
     background: #404bbf;
 }
 
-.advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .advantages-list {
     display: flex;
     gap: 24px;
@@ -177,8 +174,6 @@ img {
 
 .team {
     background: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team-subtitle {
@@ -204,6 +199,7 @@ img {
 
 .team-list-item-image {
     background: url("path_to_image");
+    display: block;
 }
 
 .team-list-text {
@@ -228,11 +224,6 @@ img {
     color: #434455;
 }
 
-.portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 36px;
@@ -253,10 +244,12 @@ img {
 .portfolio-list-text {
     padding: 32px 16px;
     background-color: #E5E5E5;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-list-item-image {
     background: url("path_to_image");
+    display: block;
 }
 
 .portfolio-list-item-subtitle {
