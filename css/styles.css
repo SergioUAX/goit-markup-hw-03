@@ -68,17 +68,19 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .header-logo-second {
-    color: #2e2f42;
-    margin-right: 76px;
+    color: #2e2f42;   
 }
 
 .header-menu-list {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+.header-menu-item {
     padding: 24px 0;
 }
 
