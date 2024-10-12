@@ -13,9 +13,22 @@ body {
  
  ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
  }
 
- .header-logo {
+ p, h1, h2, h3 ,h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -57,8 +70,17 @@ body {
     color: #404bbf;
 }
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .orderservice {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .orderservice-header {
@@ -67,7 +89,8 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;
+    color: #fff;    
+    margin-bottom: 48px;
 }
 
 .orderservice-button {
@@ -86,12 +109,18 @@ body {
     background: #404bbf;
 }
 
+.advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .advantages-list-item-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advantages-list-item-text {
@@ -103,6 +132,8 @@ body {
 
 .team {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-subtitle {
@@ -113,14 +144,20 @@ body {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list-item {
     background: #fff;
+    padding-bottom: 32px;
 }
 
 .team-list-item-image {
     background: url("path_to_image");
+}
+
+.team-list-text {
+    padding: 32px 16px;
 }
 
 .team-list-item-subtitle {
@@ -130,6 +167,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-list-item-text {
@@ -140,6 +178,11 @@ body {
     color: #434455;
 }
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 36px;
@@ -148,6 +191,12 @@ body {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list-text {
+    padding: 32px 16px;
+    background-color: #E5E5E5;
 }
 
 .portfolio-list-item-image {
@@ -167,10 +216,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-top: 8px;
 }
 
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -192,4 +244,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 16px;
 }
