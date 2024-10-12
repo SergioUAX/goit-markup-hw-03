@@ -23,6 +23,19 @@ body {
     margin-bottom: 0;
  }
 
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+
  .container {
      width: 1158px;
      padding-left: 15px;
@@ -68,6 +81,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-menu-link {
@@ -87,6 +101,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-contacts-link {
@@ -136,8 +151,9 @@ body {
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    border: none;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     }
@@ -195,6 +211,7 @@ body {
 .team-list-item {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-image {
@@ -203,7 +220,8 @@ body {
 }
 
 .team-list-text {
-    padding: 32px 16px;
+    padding: 32px 0;
+
 }
 
 .team-list-item-subtitle {
@@ -239,13 +257,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-list-text {
     padding: 32px 16px;
     background-color: #E5E5E5;
     border-bottom: 1px solid #e7e9fc;
-}
+ }
 
 .portfolio-list-item-image {
     background: url("path_to_image");
@@ -258,6 +277,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px
 }
 
 .portfolio-list-item-text {
@@ -265,7 +285,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-top: 8px;
 }
 
 .footer {
@@ -282,6 +301,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-second {
@@ -293,6 +314,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
     max-width: 264px;
 }
