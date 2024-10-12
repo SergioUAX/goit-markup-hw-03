@@ -23,9 +23,21 @@ body {
     margin-bottom: 0;
  }
 
+img {
+    display: block;
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+.header-container {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -40,6 +52,13 @@ body {
 
 .header-logo-second {
     color: #2e2f42;
+    margin-right: 76px;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-menu-link {
@@ -52,6 +71,13 @@ body {
 
 .header-address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-contacts-link {
@@ -81,19 +107,25 @@ body {
     background: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    /* text-align: center; */
+    
 }
 
 .orderservice-header {
+    margin: 0 auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;    
+    color: #fff;   
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .orderservice-button {
+    display: block;
+    margin: 0 auto;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -102,6 +134,10 @@ body {
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     }
     
 .orderservice-button:hover,
@@ -112,6 +148,15 @@ body {
 .advantages {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-list-item-subtitle {
@@ -147,9 +192,14 @@ body {
     margin-bottom: 72px;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-    padding-bottom: 32px;
 }
 
 .team-list-item-image {
@@ -189,9 +239,15 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;
+    color: #e5e5e5;
     text-transform: capitalize;
     margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .portfolio-list-text {
@@ -245,4 +301,5 @@ body {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     margin-top: 16px;
+    max-width: 264px;
 }
